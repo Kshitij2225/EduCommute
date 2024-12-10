@@ -1,0 +1,647 @@
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  top: -220px;
+  right: 0px;
+  text-align: center;
+  animation: slideIn 0.5s ease forwards; 
+  transition: transform 0.5s ease, color 0.3s ease;
+}
+
+h1:hover {
+  transform: scale(1.05);
+  color: #00b0d6;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the buttons horizontally */
+  gap: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-btn {
+  background-color: #00b0d6;
+}
+
+.student-btn {
+  background-color: #e74c3c;
+}
+
+.institute-btn {
+  background-color: #8e44ad;
+}
+.button:hover {
+  transform: translateY(-5px) scale(1.05); 
+  background-color: #333; 
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.user-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.login-title:hover {
+  color: #e74c3c; 
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; 
+}
+
+.login-input {
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  background-color: #353434;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.login-input:focus {
+  outline: none;
+  background-color: #d0d0d0;
+  transform: scale(1.02);
+}
+
+.login-button {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #333;
+  transform: translateY(-3px);
+}
+
+.institute-info-container {
+  background-color: #191b26;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+  transition: box-shadow 0.3s ease;
+  border-radius: 30px;
+}
+
+.institute-info-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.institute-info-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.institute-info-login-btn{
+  color: white;
+}
+
+.institute-info-login-btn1{
+  text-decoration: none;
+}
+
+.institute-info-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  outline: none;
+  /* width: 100%; */
+  background-color: #333;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.institute-info-input:focus{
+  background-color: white;
+}
+.institute-info-dropdown::placeholder{
+  /* background-color: white; */
+  color: white;
+}
+
+.institute-info-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  outline: none;
+  /* width: 105%; */
+  background-color: #333;
+  color: rgb(150, 149, 149);
+}
+
+.institute-info-dropdown:focus{
+  background-color: white;
+  color: black;
+}
+
+.institute-info-map-container {
+  margin-top: 20px;
+}
+
+.institute-info-map {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+}
+
+.institute-info-upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.institute-info-upload-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.institute-info-upload-btn:hover {
+  background-color: #bbb; 
+  transform: scale(1.05);
+}
+
+.institute-info-register-btn {
+  margin-left: 100px;
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 18px;
+  width: 200px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.institute-info-register-btn:hover,
+.institute-info-upload-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} 
+
+.institute-interface-container {
+  background-color: #191b26;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  transition: box-shadow 0.3s ease; 
+}
+
+.institute-interface-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.institute-interface-container h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.institute-interface-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.institute-interface-button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}
+
+.add-vehicle-body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin: 0;
+  width: 100%;  
+  overflow-y: auto; 
+}
+
+.add-vehicle-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.add-vehicle-container {
+  margin-top: 130px;
+  background-color: #191b26;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  text-align: center;
+  transition: box-shadow 0.3s ease; 
+}
+
+.add-vehicle-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.add-vehicle-title {
+  position: absolute;
+  top: 50px;
+  right: 39%;
+  font-size: 24px;
+  color: #333;
+  /* margin-bottom: 20px; */
+}
+
+.add-vehicle-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.add-vehicle-section {
+  width: 48%;
+}
+
+.add-vehicle-group {
+  margin-bottom: 20px;
+  
+}
+
+.add-vehicle-label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.add-vehicle-input {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: #ececec;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.add-vehicle-input:focus {
+  transform: scale(1.02); 
+}
+
+.add-vehicle-file-input {
+  padding: 5px;
+}
+
+.add-vehicle-submit {
+  width: auto;
+  padding: 15px 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-vehicle-submit:hover {
+  background-color: #444; 
+  transform: translateY(-2px); 
+}
+
+.add-vehicle-submit-btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-vehicle-submit-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.add-vehicle-submit-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.submit-btn-container {
+  width: 150px;
+  height: 45px;
+  padding-top: 8px;
+  border-radius: 50px;
+  color: white;
+  background-color: #000000;
+  top: 225%;
+  position: absolute;
+  right: 47%;
+  /* margin-top: 630px; */
+}
+
+.Vehicle_route_label h2{
+  font-size: 28px;
+  text-align: center;
+}
+
+.submit-btn-container button{
+  color: white;
+}
+
+.Vehicle_route{
+  margin-top: 200px;
+}
+
+.Vehicle_route_searchBox{
+  background-color: #191b26;
+}
+
+.submit-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #444;
+  transform: translateY(-2px); 
+}
+
+.map-container {
+  height: 90vh;
+  width: 100vh;
+  position: relative; 
+}
+
+.driver-interface {
+  height: 100vh; 
+  width: 100vh;
+}
+
+.start-route-button {
+  background-color: black;  
+  color: white;
+  padding: 10px 20px;        
+  font-size: 16px;         
+  border: none;             
+  border-radius: 25px;      
+  cursor: pointer;         
+  outline: none;            
+  display: inline-block;    
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.start-route-button:hover {
+  background-color: #333; 
+  transform: scale(1.05); 
+}
+
+.start-route-button:active {
+  background-color: #111;  
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.Main-Container{
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 27vw;
+  height: 90vh;
+  background-color: #191b26;
+  border-radius: 40px;
+}
+
+.signup-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.signup-title:hover {
+  color: #00b0d6; 
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.signup-input {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 7px;
+  border: none;
+  background-color: #333;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.signup-input:focus {
+  transform: scale(1.02); 
+  background-color: white;
+}
+
+.signup-button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.signup-button:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+.signup-login-button{
+  color: white;
+}
+
+.signup-login-button1{
+  text-decoration: none;
+}
+
+
+.vehicle-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* gap: 20px; */
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.vehicle-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-height: 250px;
+  flex: 0 1 200px; /*Set a flexible width for each column*/
+}
+
+.vehicle-button {
+  padding: 15px 30px;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.vehicle-title{
+  font-size: 40px;
+  position: absolute;
+  top: 80px;
+  left: 600px;
+}
+
+
+.vehicle-button:hover {
+  background-color: #bbb;
+  transform: scale(1.05); 
+}
+
+.Route-start-point{
+  width: 400px;
+  background-color: white;
+}
+
+.Logout-btn{
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  width: 110px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-style: none;
+  border-radius: 20px;
+}
+.Logout-btn:hover{
+  background-color: rgb(207, 35, 35);
+}
+.vehicle_Data{
+  height: 100vh;
+  width: 100vw;
+  margin-top: 100px;
+}
+.vehicle_information{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Map_Container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}

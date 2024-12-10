@@ -1,0 +1,130 @@
+/* Layout */
+.home-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-section {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .home-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 30px;
+    color: white;
+  }
+  
+  .home-header nav {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .header-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .header-link:hover {
+    color: #00b0d6;
+  }
+  
+  .brand-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Right Section (Login) */
+  .right-section {
+    width: 90%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../Images/bus2.jpg');
+    /* background: linear-gradient(to right, #000000, #1c1c1c); */
+  }
+  
+  .login-container {
+    background-color: #191b26;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+  }
+  
+  .login-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .login-form input {
+    /* width: 100%; */
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+  }
+  
+  .forgot-password {
+    color: #00b0d6;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  
+  .login-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .register-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+  }
+  
+  .register-btn {
+    background-color: #6c757d;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .register-btn:hover {
+    background-color: #5a6268;
+  }
+
+  .login-input:focus {
+    background-color: rgb(226, 226, 226); /* or any other color you want */
+    outline: none; 
+    color: black;
+  }
+
+  input:focus::placeholder {
+    color: rgb(0, 0, 0); /* Change placeholder color to black on focus */
+  }
